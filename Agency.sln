@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgencyWebsite", "AgencyWebsite\AgencyWebsite.csproj", "{489DE971-F658-457A-8ABC-1875D8E0FCB3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{489DE971-F658-457A-8ABC-1875D8E0FCB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{489DE971-F658-457A-8ABC-1875D8E0FCB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{489DE971-F658-457A-8ABC-1875D8E0FCB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{489DE971-F658-457A-8ABC-1875D8E0FCB3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
