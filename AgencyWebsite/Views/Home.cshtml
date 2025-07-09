@@ -1,0 +1,32 @@
+﻿@using Umbraco.Cms.Core
+@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Home>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+
+@{
+	Layout = "Master.cshtml";
+	
+	
+	}
+
+@if (Model.Image != null)
+{
+	<img width="200px" height="200px" src="@Model.Image.Url()" alt="image"/>
+}
+
+
+<h1>@Model.Root().Value("title")</h1>
+
+<p style="border: 5px solid purple">@Model.Root().Value("description")</p>
+
+<ul>
+	@if (Model.Names != null || Model.Names.Any())
+	{
+		
+		@foreach (var name in Model.Names)
+		{
+			<li>@name</li>
+		}
+		
+	}
+</ul>
