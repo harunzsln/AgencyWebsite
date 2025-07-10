@@ -1,5 +1,6 @@
 ﻿@using Umbraco.Cms.Web.Common.PublishedModels;
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+ 
 @{
 	Layout = null;
     SmidgeHelper.RequiresCss("~/css/styles.css");
@@ -27,8 +28,15 @@
        
     
     @await Html.PartialAsync("~/Views/Partials/navigation.cshtml")
-    @RenderBody()
+    @await Html.PartialAsync("~/Views/Partials/masthead.cshtml")
+    @await Html.PartialAsync("~/Views/Partials/services.cshtml")
+    @await Html.PartialAsync("~/Views/Partials/portfolioGrid.cshtml")
+    @await Html.PartialAsync("~/Views/About.cshtml")
+    
+    @{ IgnoreBody();}
     @await Html.PartialAsync("~/Views/Partials/footer.cshtml")
+    
+    
     
     
     <!-- Bootstrap core JS-->
